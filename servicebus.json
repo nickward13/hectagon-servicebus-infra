@@ -30,10 +30,12 @@
       {
         "apiVersion": "2017-04-01",
         "name": "[parameters('serviceBusNamespaceName')]",
-        "type": "Microsoft.ServiceBus/Namespaces",
+        "type": "Microsoft.ServiceBus/namespaces",
         "location": "[resourceGroup().location]",
         "sku": {
           "name": "Standard"
+        },
+        "properties":{
         }
       }
     ],
